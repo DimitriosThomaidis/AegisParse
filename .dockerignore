@@ -1,0 +1,12 @@
+.git/
+.github/
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+Loinc_2.82/
+.vscode/
+.idea/
+*.md

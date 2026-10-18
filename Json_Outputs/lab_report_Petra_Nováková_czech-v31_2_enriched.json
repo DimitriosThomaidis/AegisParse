@@ -1,0 +1,91 @@
+{
+    "patient_name": "Petra Nováková",
+    "patient_id": "ID-31-cze",
+    "drawn_time": "2026-10-01",
+    "clinic": "Specialty Center",
+    "physician": "Dr. V31",
+    "lab_name": "POKROČILÁ MOLEKULÁRNÍ ALERGOLOGIE (RAST/ISAC)",
+    "clinical_impressions": "Silná primární senzibilizace na břízu (Bet v 1) vysvětlující zkrácenou orální alergii na jablka (Mal d 1). Pacientka má dále vysokou senzibilizaci na hlavní alergen kočky (Fel d 1) a významnou reaktivitu na arašídy (Ara h 2), což představuje extrémně vysoké riziko systémové anafylaxe při požití stopového množství arašídů. Doporučeno absolutní vyhýbání se arašídům, vybavení autoinjektorem adrenalinu (EpiPen) a konzultace ohledně alergénové imunoterapie (AIT) pro jarní pyly.",
+    "tests": [
+        {
+            "raw_extracted_name": "Bříza bělokorá (rBet v 1, PR-10)",
+            "result_value": "45.5",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58796-4",
+            "canonical_name": "Birch Pollen Allergen (rBet v 1) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Bojínek luční (rPhl p 1, p 5)",
+            "result_value": "12.8",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58833-5",
+            "canonical_name": "Timothy Grass Allergen (rPhl p 1 / p 5) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Roztoč D. pteronyssinus (rDer p 1)",
+            "result_value": "0.2",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58799-8",
+            "canonical_name": "House Dust Mite Allergen (rDer p 1) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Kočka (rFel d 1, uteroglobín)",
+            "result_value": "8.2",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58802-0",
+            "canonical_name": "Cat Dander Allergen (rFel d 1) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Pes (rCan f 1, lipocalin)",
+            "result_value": "0.1",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58797-2",
+            "canonical_name": "Dog Dander Allergen (rCan f 1) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Arašíd (rAra h 2, zásobní protein)",
+            "result_value": "15.4",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58794-9",
+            "canonical_name": "Peanut Allergen (rAra h 2) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Jablko (rMal d 1, PR-10)",
+            "result_value": "18.5",
+            "unit": "iu/ml",
+            "reference_range": "< 0.35",
+            "loinc_code": "LOINC:58823-6",
+            "canonical_name": "Apple Allergen (rMal d 1) IgE",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Celkové IgE",
+            "result_value": "650",
+            "unit": "iu/ml",
+            "reference_range": "< 100",
+            "loinc_code": "LOINC:19113-0",
+            "canonical_name": "Immunoglobulin E (IgE)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "patient_name": "Mads Mikkelsen",
+    "patient_id": "CYB-46-dan",
+    "drawn_time": "2026-12-29",
+    "clinic": "Cyber Clinic",
+    "physician": "Dr. Nexus",
+    "lab_name": "ODENSE UNIVERSITETSHOSPITAL",
+    "clinical_impressions": "Positiv svedtest (klorid > 60 mmol/L) og homozygot F508del-mutation i CFTR-genet bekræfter diagnosen Cystisk Fibrose. Meget lav fækal elastase indikerer svær eksokrin pankreasinsufficiens (EPI). Der skal opstartes pankreasenzymsubstitution og henvises til specialiseret CF-center.",
+    "tests": [
+        {
+            "raw_extracted_name": "Svedtest (Klorid)",
+            "result_value": "85",
+            "unit": "mmol/l",
+            "reference_range": "< 30",
+            "loinc_code": "LOINC:2077-6",
+            "canonical_name": "Sweat Chloride (Sweat Test)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Svedtest (Natrium)",
+            "result_value": "78",
+            "unit": "mmol/l",
+            "reference_range": "< 30",
+            "loinc_code": "LOINC:2954-6",
+            "canonical_name": "Sweat Sodium (Sweat Test)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Fækal Elastase-1",
+            "result_value": "45",
+            "unit": "μE/g",
+            "reference_range": "> 200",
+            "loinc_code": "LOINC:26084-4",
+            "canonical_name": "Faecal Elastase-1",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "CFTR Genetik (F508del)",
+            "result_value": "Homozygot",
+            "unit": null,
+            "reference_range": "Ikke påvist",
+            "loinc_code": "LOINC:21663-0",
+            "canonical_name": "CFTR Gene Mutation Analysis",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        }
+    ]
+}

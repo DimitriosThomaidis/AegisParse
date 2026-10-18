@@ -1,0 +1,30 @@
+{
+    "filename": "lab_report_Petra_Nováková_czech-v31",
+    "evaluation_summary": {
+        "total_tests_extracted": 8,
+        "total_lab_tests_evaluated": 8,
+        "total_tests_mapped": 8,
+        "total_tests_unmapped": 0,
+        "total_non_lab_excluded": 0,
+        "phase_1_text_reconciliation_pct": 100.0,
+        "phase_1_metadata_completeness_pct": 100.0,
+        "phase_2_loinc_mapping_accuracy_pct": 100.0,
+        "overall_pipeline_accuracy_pct": 100.0,
+        "mean_mapping_similarity_score": 1.0,
+        "has_clinical_narrative": true
+    },
+    "match_type_breakdown": {
+        "exact_keyword_count": 8,
+        "sparse_overlap_count": 0,
+        "bridged_vector_count": 0,
+        "excluded_non_lab_count": 0,
+        "unmapped_count": 0
+    },
+    "data_quality_checks": {
+        "tests_with_numeric_or_valid_values": 8,
+        "tests_with_units": 8,
+        "populated_metadata_fields": 6,
+        "total_metadata_fields_evaluated": 6
+    },
+    "diagnosed_problems": []
+}

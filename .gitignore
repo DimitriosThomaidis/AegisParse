@@ -1,0 +1,23 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache & test artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Raw Regenstrief LOINC Archive (>100MB & licensed from loinc.org)
+Loinc_2.82/
+
+# Local utility scripts / temporary bundles
+collect_enriched_jsons.py
+all_patients_enriched.json
+
+# OS & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,101 @@
+{
+    "patient_name": "Иванов Алексей Петрович",
+    "patient_id": "ОМС-4455-6677",
+    "drawn_time": "2026-08-05",
+    "clinic": null,
+    "physician": "Д-р Смирнова А.В.",
+    "lab_name": "ЛАБОРАТОРИЯ",
+    "clinical_impressions": "Клиническая картина (мигрирующая эритема) и положительные результаты IgM (ИФА) подтвержден иммуноблотом указывают на раннюю локализованную или раннюю диссеминированную стадию болезни Лайма. Рекомендуется курс антибиотикотерапии (доксациклин или амоксициллин).",
+    "tests": [
+        {
+            "raw_extracted_name": "Borrelia burgdorferi IgM (ИФА)",
+            "result_value": "Положительно",
+            "unit": null,
+            "reference_range": "< 0.9",
+            "loinc_code": "LOINC:7818-8",
+            "canonical_name": "Borrelia burgdorferi IgM Antibody (ELISA / Immunoblot)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Borrelia burgdorferi IgG (ИФА)",
+            "result_value": "Отрицательно",
+            "unit": null,
+            "reference_range": "< 0.9",
+            "loinc_code": "LOINC:7817-0",
+            "canonical_name": "Borrelia burgdorferi IgG Antibody (ELISA / Immunoblot)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Иммуноблот IgM к Borrelia",
+            "result_value": "Обнаружено (OspC+, VlsE+)",
+            "unit": null,
+            "reference_range": "Не обнаружено",
+            "loinc_code": "LOINC:7818-8",
+            "canonical_name": "Borrelia burgdorferi IgM Antibody (ELISA / Immunoblot)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Иммуноблот IgG к Borrelia",
+            "result_value": "Не обнаружено",
+            "unit": null,
+            "reference_range": "Не обнаружено",
+            "loinc_code": "LOINC:7817-0",
+            "canonical_name": "Borrelia burgdorferi IgG Antibody (ELISA / Immunoblot)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Лейкоциты (WBC)",
+            "result_value": "8.5",
+            "unit": "10*9/l",
+            "reference_range": "4.0 - 9.0",
+            "loinc_code": "LOINC:6690-2",
+            "canonical_name": "Leukocytes (WBC)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "СОЭ (ESR)",
+            "result_value": "28",
+            "unit": "mm/h",
+            "reference_range": "1 - 10",
+            "loinc_code": "LOINC:30341-2",
+            "canonical_name": "Erythrocyte Sedimentation Rate (ESR)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "С-реактивный белок (CRP)",
+            "result_value": "15.4",
+            "unit": "mg/l",
+            "reference_range": "< 5.0",
+            "loinc_code": "LOINC:1988-5",
+            "canonical_name": "C-Reactive Protein (CRP)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Ревматоидный фактор (RF)",
+            "result_value": "12",
+            "unit": "iu/ml",
+            "reference_range": "< 14",
+            "loinc_code": "LOINC:11572-5",
+            "canonical_name": "Rheumatoid Factor (RF)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "Антинуклеарные антитела (ANA)",
+            "result_value": "Отрицательно",
+            "unit": null,
+            "reference_range": "Отрицательно",
+            "loinc_code": "LOINC:4256-4",
+            "canonical_name": "Antinuclear Antibodies (ANA)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        }
+    ]
+}

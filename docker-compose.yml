@@ -1,0 +1,67 @@
+services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: aegisparse-ollama
+    ports:
+      - "127.0.0.1:11434:11434"
+    volumes:
+      - ollama_models:/root/.ollama
+    restart: unless-stopped
+
+  ollama-model-puller:
+    image: curlimages/curl:latest
+    container_name: aegisparse-model-puller
+    depends_on:
+      - ollama
+    entrypoint: >
+      sh -c "
+      echo 'Waiting for Ollama server...' &&
+      until curl -s http://ollama:11434/api/tags > /dev/null; do sleep 2; done &&
+      echo 'Pulling qwen3.5:4b...' &&
+      curl -s http://ollama:11434/api/pull -d '{\"name\": \"qwen3.5:4b\"}' > /dev/null &&
+      echo 'Pulling nomic-embed-text...' &&
+      curl -s http://ollama:11434/api/pull -d '{\"name\": \"nomic-embed-text\"}' > /dev/null &&
+      echo 'Pulling medgemma:4b...' &&
+      curl -s http://ollama:11434/api/pull -d '{\"name\": \"medgemma:4b\"}' > /dev/null &&
+      echo 'All required clinical models ready.'
+      "
+
+  aegisparse:
+    build: .
+    container_name: aegisparse-pipeline
+    depends_on:
+      ollama-model-puller:
+        condition: service_completed_successfully
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - AEGIS_BASE_DIR=/app
+    volumes:
+      - ./Images:/app/Images
+      - ./Json_Outputs:/app/Json_Outputs
+      - ./seed_ontology.json:/app/seed_ontology.json
+      - ./config_rules.json:/app/config_rules.json
+      - ./clinical_lexicons.json:/app/clinical_lexicons.json
+      - ./loinc_index.faiss:/app/loinc_index.faiss
+      - ./loinc_metadata.json:/app/loinc_metadata.json
+    command: ["python", "app.py"]
+
+  ontology-assistant:
+    build: .
+    container_name: aegisparse-ontology-assistant
+    profiles: ["assistant"]
+    depends_on:
+      - ollama
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+      - AEGIS_BASE_DIR=/app
+    volumes:
+      - ./Json_Outputs:/app/Json_Outputs
+      - ./seed_ontology.json:/app/seed_ontology.json
+      - ./config_rules.json:/app/config_rules.json
+      - ./clinical_lexicons.json:/app/clinical_lexicons.json
+      - ./loinc_index.faiss:/app/loinc_index.faiss
+      - ./loinc_metadata.json:/app/loinc_metadata.json
+    command: ["python", "ontology_assistant.py"]
+
+volumes:
+  ollama_models:

@@ -1,0 +1,71 @@
+{
+    "patient_name": "יעל כהן",
+    "patient_id": "ID-38-heb",
+    "drawn_time": "2026-11-22",
+    "clinic": "Aura Diagnostics",
+    "physician": "Dr. Glass",
+    "lab_name": "AuraLab Hebrew",
+    "clinical_impressions": "מוגבר (85 מעל) יתר דם ץחל ,פורטוירנוי, תרצובמיינפל הקל הפערע sFlit-1/PIGF וסחי. מססמיומורמ. השדש החגה (Preeclampsia) באיזכמ דבכי עיצעי בוררי לע רעלץ הריין. פראיפוד, קישל תמ גניזמ סולפ והצרכ יילוד.",
+    "tests": [
+        {
+            "raw_extracted_name": "sFlit-1 / PIGF",
+            "result_value": "95",
+            "unit": null,
+            "reference_range": null,
+            "loinc_code": "LOINC:74757-6",
+            "canonical_name": "sFlt-1 / PlGF Ratio",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "חלבון בשתן (24 שעות)",
+            "result_value": "450",
+            "unit": null,
+            "reference_range": null,
+            "loinc_code": "LOINC:2888-6",
+            "canonical_name": "Protein, 24h Urine",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "לץח דם סיסטול/דיסטולית (סוסטולית)",
+            "result_value": "155/105",
+            "unit": "mmhg",
+            "reference_range": null,
+            "loinc_code": "NON_LAB_OBSERVATION",
+            "canonical_name": "לץח דם סיסטול/דיסטולית (סוסטולית)",
+            "similarity_score": 0.0,
+            "match_type": "EXCLUDED_NON_LAB"
+        },
+        {
+            "raw_extracted_name": "PLT סיוטימ",
+            "result_value": "110",
+            "unit": "10*3/ul",
+            "reference_range": null,
+            "loinc_code": "LOINC:777-3",
+            "canonical_name": "Platelets (PLT)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "קריאניטבד",
+            "result_value": "1.1",
+            "unit": "mg/dl",
+            "reference_range": null,
+            "loinc_code": "LOINC:2160-0",
+            "canonical_name": "Creatinine",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        },
+        {
+            "raw_extracted_name": "AST (SGOT)",
+            "result_value": "75",
+            "unit": "u/l",
+            "reference_range": null,
+            "loinc_code": "LOINC:1920-8",
+            "canonical_name": "Aspartate Aminotransferase (AST/SGOT)",
+            "similarity_score": 1.0,
+            "match_type": "EXACT_KEYWORD"
+        }
+    ]
+}
