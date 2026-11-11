@@ -5,7 +5,11 @@
 [![Inference: 100% Local Ollama + SapBERT](https://img.shields.io/badge/PHI_Privacy-100%25_Local_%2F_Zero_Cloud-2ea44f.svg)](https://ollama.com/)
 [![Terminology: LOINC 2.82 & UCUM](https://img.shields.io/badge/Terminology-LOINC_%26_UCUM_Guarded-0052CC.svg)](https://loinc.org/)
 [![Docker Ready](https://img.shields.io/badge/Docker-Compose_Ready-2496ED.svg?logo=docker&logoColor=white)](./docker-compose.yml)
+[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face%20Spaces-Live%20Clinical%20Guard%20Inspector-blue?style=for-the-badge)](https://huggingface.co/spaces/DimitrisThomaidis/AegisParse-LOINC-Guard)
 
+> ⚡ **Try the Live Interactive Demo in Your Browser (Zero Setup Required):**
+> Test AegisParse's **Phase 1 Homoglyph/RTL Sanitizer** and **Phase 2 Deterministic Clinical Subtype Guards (`_violates_subtype_guard`)** side-by-side against Naive Vector RAG across 8 multilingual collision presets on [**Hugging Face Spaces (`AegisParse-LOINC-Guard`)**](https://huggingface.co/spaces/DimitrisThomaidis/AegisParse-LOINC-Guard).
+> 
 **AegisParse** is a privacy-preserving, **100% local** clinical document intelligence engine that extracts structured laboratory results from heterogeneous medical report images across **30 languages (10 script families)** and standardizes them to **LOINC® (Logical Observation Identifiers Names and Codes)** without ever transmitting Protected Health Information (PHI) to external cloud APIs.
 
 Built around **Fail-Safe Clinical Governance**—aligned with **European Health Data Space (EHDS) Regulation (EU) 2025/327**, **HL7® FHIR® R4 `Observation`**, and **US CLIA / ISO 15189** data integrity principles—AegisParse strictly decouples **deterministic production LOINC mapping (`app.py`)** from **offline semantic ontology discovery (`ontology_assistant.py`)**.
