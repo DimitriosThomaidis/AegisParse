@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use AegisParse in your clinical data pipelines, EHDS interoperability research, or publications, please cite it as below."
+authors:
+  - family-names: "Thomaidis"
+    given-names: "Dimitrios"
+title: "AegisParse: 30-Language Clinical Laboratory Vision Extraction and Zero-Hallucination LOINC Mapping Engine"
+version: 1.0.0
+date-released: 2026-10-19
+url: "https://github.com/DimitriosThomaidis/AegisParse"
+repository-code: "https://github.com/DimitriosThomaidis/AegisParse"
+keywords:
+  - "medical-ai"
+  - "loinc"
+  - "hl7-fhir"
+  - "ehds"
+  - "sapbert"
+  - "faiss"
+  - "vision-language-models"
+license: MIT
